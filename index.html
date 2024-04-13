@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica formulario</title>
+</head>
+<body>
+    <h1>Practica formulario</h1>
+    <h2>Solicitud para salidas con mecha</h2>
+    <form action="./show_data.html">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="ingresa tu nombre" required>&nbsp;
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="ingresa tu surneim" required><br><br>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" placeholder="tu choza">&nbsp;
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" placeholder="civilizacion/no civilizacion" required>&nbsp;
+            <label for="horarios">Horarios en los tu casa esta vacia:</label>
+            <input type="text" id="horarios" placeholder=".----." required><br><br>
+            <label for="nro_targeta">Nro de tatjeta:</label>
+            <input type="number" id="nro_targeta" placeholder=" los 16 dig. muy importante">&nbsp;
+            <label for="cod_tar">Codigo de seguridad:</label>
+            <input type="number" id="cod_tar" placeholder="firma shrek">
+            <label for="fecha_ven">Fecha de vencimiento:</label>
+            <input type="date" id="fecha_ven" placeholder="muy importante" required><br><br>
+            <label for="fecha_nac">Fecha Nac.(mm/dd/yyyy):</label>
+            <input type="date" id="fecha_nac" required><br>
+            <label for="genero">Genero(radio):</label>
+            <input type="radio" name="genero" value="Hombre">Hombre &nbsp;
+            <input type="radio" name="genero" value="Mujer">Mujer &nbsp;
+            <input type="radio" name="genero" value="Gei">Gei &nbsp;
+            <input type="radio" name="genero" value="Recontra gei">Otro tipo de gei &nbsp;
+        </fieldset><br>
+        <label for="conocimientos">Conocimientos previos (checkbox):</label>
+        <input type="checkbox" name="conocimientos" value="html">HTML&nbsp;
+        <input type="checkbox" name="conocimientos" value="css">CSS&nbsp;
+        <input type="checkbox" name="conocimientos" value="bootstrap">Bootsstrap&nbsp;
+        <input type="checkbox" name="conocimientos" value="javascript">JavasScript&nbsp;
+        <input type="checkbox" name="conocimientos" value="base de datos">Base de Datos&nbsp;
+        <input type="checkbox" name="conocimientos" value="chocar">Una vez choque un auto&nbsp;
+        <input type="checkbox" name="conocimientos" value="phyton">Taekwondo&nbsp;
+        <input type="checkbox" name="conocimientos" value="gei">Otro tipo de gei&nbsp;
+        <input type="checkbox" name="conocimientos" value="chano">literalmente soy Chano&nbsp;
+        <input type="checkbox" name="conocimientos" value="django">Django<br><br>
+        <label for="estudios">Estudios(select):</label>
+        <select name="estudios" id="estudios">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="terciario">Terciario</option>
+            <option value="universidad">Universidad(carrera de grado)</option>
+            <option value="maestria">Maestria especializada</option>
+            <option value="Dios">Yo invente el estudio</option>
+        </select><br><br>
+        <label for="comentario">descripcion de la salida hora y lugar</label>
+        <textarea name="comentario" id="" cols="60" rows="5">ej: juntada de panas con pizza viernes a las 20hs</textarea><br><br>
+        <input type="submit" value="Enviar">&nbsp;&nbsp;<input type="reset" value="reset"><br>
+    </form>
+    <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html"</p>
+
+</body>
+</html>
